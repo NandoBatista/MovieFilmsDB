@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FilmsMovieDB</string>
+
+    <!--Titles Home Fragment-->
+    <string name="title_textview_now_playing">Em Exibição</string>
+    <string name="title_textview_up_coming">Em Breve</string>
+    <string name="title_textview_popular">Mais Populares</string>
+    <string name="title_textview_top_rated">Melhores Avaliados</string>
+
+    <!--Titles Details Fragment-->
+    <string name="title_textview_details">Sinopse</string>
+    <string name="title_textview_reviews">Comentários</string>
+    <string name="title_textview_similar_movies">Mais Como Este</string>
+</resources>
