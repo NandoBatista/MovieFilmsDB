@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FilmsMovieDB</string>
+
+    <!--Titles Home Fragment-->
+    <string name="title_textview_now_playing">Now Playing</string>
+    <string name="title_textview_up_coming">Coming Soon</string>
+    <string name="title_textview_popular">Most Popular</string>
+    <string name="title_textview_top_rated">Top Rated</string>
+
+    <!--Titles Details Fragment-->
+    <string name="title_textview_details">Synopsis</string>
+    <string name="title_textview_reviews">Comments</string>
+    <string name="title_textview_similar_movies">More Like This</string>
+</resources>
