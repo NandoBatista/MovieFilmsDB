@@ -20,6 +20,10 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
+            app:enterAnim="@anim/move_to_start"
+            app:exitAnim="@anim/move_to_end"
+            app:popEnterAnim="@anim/get_end"
+            app:popExitAnim="@anim/from_start"
             android:id="@+id/action_homeFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
     </fragment>
@@ -27,5 +31,9 @@
         android:id="@+id/detailsFragment"
         android:name="com.batista.filmsmoviedb.presentation.details.DetailsFragment"
         android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

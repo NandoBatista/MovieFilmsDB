@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
 <!--        <include-->
 <!--            android:id="@+id/include_view_movies_loading_state"-->
 <!--            layout="@layout/include_view_movies_loading_state"/>-->
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -54,9 +54,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/title_textview_now_playing"
-            android:textAlignment="textStart"
-            android:textColor="@color/white"
-            android:textSize="22sp"
+            android:textColor="@color/light_violet"
+            android:textSize="21sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout1"/>
@@ -80,9 +79,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/title_textview_up_coming"
-            android:textAlignment="textStart"
-            android:textColor="@color/white"
-            android:textSize="22sp"
+            android:textColor="@color/light_violet"
+            android:textSize="21sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rc_now_playing"/>
@@ -106,9 +104,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/title_textview_popular"
-            android:textAlignment="textStart"
-            android:textColor="@color/white"
-            android:textSize="22sp"
+            android:textColor="@color/light_violet"
+            android:textSize="21sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rc_up_coming"/>
@@ -132,9 +129,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/title_textview_top_rated"
-            android:textAlignment="textStart"
             android:textColor="@color/white"
-            android:textSize="22sp"
+            android:textSize="21sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rc_popular"/>

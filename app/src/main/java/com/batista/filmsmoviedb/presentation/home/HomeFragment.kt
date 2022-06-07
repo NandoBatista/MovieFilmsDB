@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.navigation.fragment.findNavController
+import com.batista.filmsmoviedb.R
 import com.batista.filmsmoviedb.data.network.repository.MockMovies
 import com.batista.filmsmoviedb.databinding.FragmentHomeBinding
 
@@ -14,7 +14,8 @@ class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding: FragmentHomeBinding get() = _binding!!
-    lateinit var homeAdapter: HomeAdapter
+
+    private lateinit var homeAdapter: HomeAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,6 +31,10 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initRecycler()
+
+        binding.icLogoMovieDb.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_detailsFragment)
+        }
     }
 
     private fun initRecycler() {

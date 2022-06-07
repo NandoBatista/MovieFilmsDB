@@ -8,7 +8,15 @@
     <string name="title_textview_top_rated">Melhores Avaliados</string>
 
     <!--Titles Details Fragment-->
-    <string name="title_textview_details">Sinopse</string>
+    <string name="title_textview_overview">Sinopse</string>
     <string name="title_textview_reviews">Comentários</string>
     <string name="title_textview_similar_movies">Mais Como Este</string>
+    <string name="tv_title_movie">Harry Potter</string>
+
+    <!--Messages-->
+    <string name="tv_message_duration_movie">2 hora(s) 22 minuto(s)</string>
+    <string name="tv_message_type_movie">Aventura • Fantasia</string>
+    <string name="tv_message_average_of_votes">8.9 / 10 Média de Votos</string>
+    <string name="tv_message_overview">Harry Potter é um garoto órfão que vive infeliz com seus tios, os Dursleys. Ele recebe uma carta contendo um convite para ingressar em Hogwarts, uma famosa escola especializada em formar jovens bruxos. Inicialmente, Harry é impedido de ler a carta por seu tio, mas logo recebe a visita de Hagrid, o guarda-caça de Hogwarts, que chega para levá-lo até a escola. Harry adentra um mundo mágico que jamais imaginara, vivendo diversas aventuras com seus novos amigos, Rony Weasley e Hermione Granger.</string>
+
 </resources>

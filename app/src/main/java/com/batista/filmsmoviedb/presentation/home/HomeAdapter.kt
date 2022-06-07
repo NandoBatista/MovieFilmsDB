@@ -33,7 +33,7 @@ class HomeViewHolder(val itemView: View): RecyclerView.ViewHolder(itemView) {
     private val imageView = itemView.findViewById<ImageView>(R.id.img_movie_item)
 
     fun bindItem(item: ResultMovie) {
-        Glide.with(itemView)
+        Glide.with(itemView.context)
             .load(item.poster_path)
             .into(imageView)
     }

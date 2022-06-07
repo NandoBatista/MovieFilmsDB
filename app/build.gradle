@@ -3,6 +3,10 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+def apikeyProperties = new Properties()
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
 android {
     compileSdk 32
 
@@ -14,6 +18,13 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "API_KEY", apikeyProperties['API_KEY'])
+        buildConfigField("String", "API_TOKEN", apikeyProperties['API_TOKEN'])
+        buildConfigField("String", "BASE_URL", '"https://api.themoviedb.org/3/"')
+        buildConfigField("String", "GET_IMAGE_URL", '"https://image.tmdb.org/t/p/original"')
+        buildConfigField("String", "LANGUAGE", '"pt-BR"')
+        buildConfigField("String", "REGION", '"BR"')
     }
 
     buildTypes {
@@ -46,12 +57,21 @@ dependencies {
     //Dependency for Material Components
     implementation 'com.google.android.material:material:1.6.1'
 
-    //Glide
-    implementation ("com.github.bumptech.glide:glide:4.12.0")
+    // Glide
+    def glide_version = "4.12.0"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
 
-    //Gson
+    // Gson
     implementation 'com.google.code.gson:gson:2.8.9'
 
-    //Shimmer
+    // Shimmer
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    // Paging3
+    implementation "androidx.paging:paging-runtime-ktx:3.1.1"
+
+    // Retrofit
+    def retrofit_version = '2.9.0'
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
 }
